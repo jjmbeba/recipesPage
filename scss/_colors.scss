@@ -1,0 +1,35 @@
+$gray:#4F4F4F;
+$orange:#F2994A;
+$ltgray:#BDBDBD;
+$dkgray:#333333;
+
+.intro{
+    &__text{
+        color: $gray;
+    }
+}
+
+.recipe{
+    &__wrapper{
+        &__title{
+            color: $ltgray;
+        }
+    }
+    &__inst{
+        &__list{
+            li::before{
+                color: white;
+                background: $orange;
+            }
+        }
+    }
+}
+
+.source{
+    color: $ltgray;
+}
+
+
+#serv{
+    color: $orange;
+}

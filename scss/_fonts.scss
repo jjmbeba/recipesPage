@@ -1,0 +1,124 @@
+@import 'functions';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap');
+
+body{
+    font-family: 'Montserrat';
+}
+
+.intro{
+    &__title{
+        font-family: 'Playfair Display';
+        font-weight: 700;
+        font-size: rem(24);
+    }
+    &__text{
+        font-size: rem(12);
+        font-weight: 500;
+    }
+}
+
+.recipe{
+    &__wrapper{
+        &__title{
+            font-size: rem(8);
+            font-weight: 700;
+
+        }
+        &__small{
+            font-size: rem(10);
+            font-weight: 500;
+        }
+    }
+    &__ing{
+        h2{
+            font-family: 'Playfair Display';
+            font-weight: 700;
+            font-size: rem(18);
+        }
+        &__dessert{
+            h3{
+                font-family: 'Playfair Display';
+                font-weight: 400;
+                font-size: rem(16);
+                font-style: italic;
+            }
+        }
+    }
+    &__inst{
+        h2{
+            font-family: 'Playfair Display';
+            font-weight: 700;
+            font-size: rem(24);
+        }
+        &__list{
+            font-weight: 400;
+            font-family: rem(16);
+
+            li::before{
+                font-family: 'Playfair Display';
+                font-weight: 700;
+                font-size: rem(24);
+            }
+        }
+    }
+}
+
+.form{
+    label{
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: rem(14);
+        line-height: rem(25);
+    }
+    &__bold{
+        font-weight: 700;
+    }
+    &__italic{
+        font-style: italic;
+    }
+}
+
+.source{
+    font-weight: 400;
+    font-size: rem(12);
+    line-height: rem(18);
+    font-style: italic;    
+}
+
+@media screen and (min-width:992px) {
+    .intro{
+        &__title{
+            font-size: rem(48);
+        }
+        &__text{
+            font-size: rem(14);
+        }
+    }
+    .recipe{
+        &__wrapper{
+            &__title{
+                font-size: rem(10);
+    
+            }
+            &__small{
+                  font-size: rem(14);
+            }
+        }
+        &__ing{
+            h2{
+                font-size: rem(24);
+            }
+            &__dessert{
+                h3{
+                    font-size: rem(18);
+                }
+            }
+        }
+    }
+    .form{
+        label{
+            font-size: rem(16);
+        }
+    }
+}
