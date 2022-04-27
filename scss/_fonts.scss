@@ -86,7 +86,7 @@ body{
     font-style: italic;    
 }
 
-@media screen and (min-width:992px) {
+@media screen and (min-width:768px) {
     .intro{
         &__title{
             font-size: rem(48);
